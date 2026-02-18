@@ -1,4 +1,4 @@
-div#book-history {
+div.book-list {
   overflow-x: auto;
 
   table {
