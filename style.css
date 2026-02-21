@@ -15,7 +15,7 @@ html {
 
 body {
   width: 70%;
-  max-width: 600px; /* Add a max-width for very wide screens */
+  max-width: 800px; /* Add a max-width for very wide screens */
   margin: 20px auto;
   font-family: sans-serif;
   line-height: 1.5;

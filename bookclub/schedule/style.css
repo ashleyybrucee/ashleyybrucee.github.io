@@ -1,0 +1,27 @@
+body {
+  max-width: 1000px; /* Add a max-width for very wide screens */
+}
+
+div.schedule {
+    img {
+      text-align: center;
+      overflow-x: visible;
+      width:100%
+    }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: fit-content;
+}
+  th,
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
