@@ -6,6 +6,21 @@ div.book-list {
     width: 100%;
     min-width: fit-content;
   }
+}
+
+  div.schedule-overview {
+    img {
+      text-align: center;
+      overflow-x: visible;
+      width:100%
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: fit-content;
+    }
+}
 
   th,
   td {
@@ -21,5 +36,3 @@ div.book-list {
   td > img {
     height: 200px;
   }
-}
-
