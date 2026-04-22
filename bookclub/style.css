@@ -1,38 +1,81 @@
 div.book-list {
   overflow-x: auto;
-
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    min-width: fit-content;
-  }
+  margin: 1em 0 2em;
 }
-
-  div.schedule-overview {
-    img {
-      text-align: center;
-      overflow-x: visible;
-      width:100%
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      min-width: fit-content;
-    }
+ 
+div.book-list table,
+div.schedule-overview table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: fit-content;
 }
-
-  th,
-  td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-
-  th {
-    background-color: #f2f2f2;
-  }
-
-  td > img {
-    height: 200px;
-  }
+ 
+div.schedule-overview {
+  margin: 1em 0;
+  overflow-x: auto;
+}
+ 
+th {
+  color: var(--sage);
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+ 
+td {
+  border: 1px solid var(--border);
+  text-align: left;
+  padding: 10px 12px;
+  vertical-align: top;
+}
+ 
+ 
+td > img {
+  height: 200px;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  box-shadow: 2px 3px 8px rgba(0,0,0,0.12);
+}
+ 
+td hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 6px 0;
+}
+ 
+td p {
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+  margin: 4px 0;
+}
+ 
+/* Push discussion question links to the bottom of the cell */
+#past-books td:has(.cell-flex) {
+  height: 1px;
+}
+ 
+.cell-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+ 
+.cell-flex a {
+  margin-top: auto;
+  padding-top: 12px;
+}
+ 
+#next-meeting td {
+  font-weight: 200;
+  color: var(--ink);
+}
+ 
+.schedule > p {
+  color: var(--ink-muted);
+  font-size: 0.97rem;
+}

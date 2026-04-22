@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --theme: oklch(65% 0.1 120);
   --theme-light: oklch(85% 0.1 120);
   --theme-dark: oklch(35% 0.1 120);
@@ -15,7 +15,7 @@ html {
 
 body {
   width: 70%;
-  max-width: 800px; /* Add a max-width for very wide screens */
+  max-width: 800px;
   margin: 20px auto;
   font-family: sans-serif;
   line-height: 1.5;
@@ -30,4 +30,104 @@ main {
 h1,
 h2 {
   text-align: center;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;600&display=swap');
+ 
+:root {
+  --gold:        #b5893a;
+  --sage:        oklch(65% 0.1 120);
+  --cream:       #faf7f0;
+  --ink:         #2e2b25;
+  --ink-muted:   #6b6458;
+  --border:      #d6c99a;
+ 
+  --body-font:    'Source Sans 3', Georgia, serif;
+  --heading-font: 'Lora', Georgia, serif;
+}
+ 
+@view-transition {
+  navigation: auto;
+}
+ 
+html {
+  scrollbar-gutter: stable;
+  background-color: var(--sage);
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 8px,
+      rgba(255,255,255,0.04) 8px,
+      rgba(255,255,255,0.04) 9px
+    );
+}
+ 
+body {
+  width: 70%;
+  max-width: 820px;
+  margin: 32px auto;
+  font-family: var(--body-font);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ink);
+  background-color: var(--cream);
+  padding: 36px 44px;
+  border: 2px solid var(--border);
+  border-top: 5px solid var(--gold);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+}
+ 
+main {
+  margin-bottom: 28px;
+}
+ 
+h1 {
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--ink);
+  margin-bottom: 0.15em;
+}
+ 
+h2 {
+  font-family: var(--heading-font);
+  font-size: 1.35rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--sage);
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+ 
+header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+ 
+header h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--gold);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+ 
+a {
+  color: var(--sage);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+ 
+a:hover {
+  color: var(--gold);
+}
+ 
+p {
+  color: var(--ink);
+  margin: 0.6em 0;
 }

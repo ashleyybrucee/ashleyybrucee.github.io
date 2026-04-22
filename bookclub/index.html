@@ -6,25 +6,16 @@
     <title>Ashley's Book Club</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/favicon/favicon-96x96.png"
-      sizes="96x96"
-    />
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/favicon/apple-touch-icon.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
   </head>
-
+ 
   <body>
     <script src="/oneko.js" defer></script>
-
+ 
     <header>
       <h1>Ashley's Book Club</h1>
     </header>
@@ -33,36 +24,34 @@
         This is a book club where my beloved friends and I read and chat about
         books!
       </p>
-
+ 
       <h2>Schedule</h2>
       <div class="schedule">
-        <p>Here you can find what our bookclub schedule is!</p>
+        <p>Here you can find what our book club schedule is!</p>
         <p>Since we are just getting started, the schedule is a little wonky. Eventually, we will switch over to
-        making book club the first Saturday of the Month. That way it's a little easier to plan around for future sessions.
+        making book club the first Saturday of the month. That way it's a little easier to plan around for future sessions.
         </p>
         <p>Our next book club will be:</p>
         <div class="schedule-overview" id="next-meeting">
-        <table>
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Event</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Saturday May 9, 2026</td>
-              <td>Book Club to discuss Recursion</td>
-            </tr>
-          </tbody>
-        </table>
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Saturday May 9, 2026</td>
+                <td>Book Club to discuss Recursion</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-
+ 
       <h2>Current Book</h2>
-      <p>
-        Here's what we are currently reading:
-      </p>
+      <p>Here's what we are currently reading:</p>
       <div class="book-list" id="current-books">
         <table>
           <thead>
@@ -78,7 +67,7 @@
               <td>
                 <img
                   src="./book-covers/recursion.jpg"
-                  alt="Book cover of Recurion shows a maze-like looking figure eight."
+                  alt="Book cover of Recursion shows a maze-like looking figure eight."
                 />
               </td>
               <td>
@@ -92,12 +81,10 @@
           </tbody>
         </table>
       </div>
-
+ 
       <h2>Previously Read Books</h2>
-      <p>
-        Here's what we've read in the past:
-      </p>
-      <div class="book-list" id="current-books">
+      <p>Here's what we've read in the past:</p>
+      <div class="book-list" id="past-books">
         <table>
           <thead>
             <tr>
@@ -110,7 +97,7 @@
           </thead>
           <tbody>
             <tr>
-              <td> March 12, 2026</td>
+              <td>March 12, 2026</td>
               <td>
                 <img
                   src="./book-covers/all-systems-red.jpg"
@@ -118,18 +105,16 @@
                 />
               </td>
               <td>
-                All Systems Red (Murderbot #1)
-                <hr />
-                <p>
-                  Company-supplied droid becomes self-aware. Adventures ensue.
-                </p>
-                <hr />
-                <a target="_blank" href="./discussion-questions/murderbot-dq.pdf">Discussion questions.</a>
+                <div class="cell-flex">
+                  All Systems Red (Murderbot #1)
+                  <hr />
+                  <p>Company-supplied droid becomes self-aware. Adventures ensue.</p>
+                  <a target="_blank" href="./discussion-questions/murderbot-dq.pdf">Discussion questions.</a>
+                </div>
               </td>
               <td>Martha Wells</td>
               <td>144</td>
             </tr>
-        
             <tr>
               <td>April 12, 2026</td>
               <td>
@@ -139,11 +124,12 @@
                 />
               </td>
               <td>
-                Stories of Your Life and Others
-                <hr />
-                <p>A collection of Black-Mirror-esque short stories.</p>
-                 <hr />
-                <a target="_blank" href="./discussion-questions/stories-of-your-life-dq.pdf">Discussion questions.</a>
+                <div class="cell-flex">
+                  Stories of Your Life and Others
+                  <hr />
+                  <p>A collection of Black-Mirror-esque short stories.</p>
+                  <a target="_blank" href="./discussion-questions/stories-of-your-life-dq.pdf">Discussion questions.</a>
+                </div>
               </td>
               <td>Ted Chiang</td>
               <td>281</td>
@@ -151,13 +137,14 @@
           </tbody>
         </table>
       </div>
+ 
       <h2>Past Book Suggestions</h2>
       <p>
         You can find previously suggested books here:
         <a href="./past-suggestions/">Book Suggestions</a>
       </p>
-      <p> If you were intrigued by a book that didn't win the vote this time around, worry not! I will catalog all the 
-        proposed books here! That way, we can throw it back on the ballot in the future OR you can reference them for your 
+      <p>If you were intrigued by a book that didn't win the vote this time around, worry not! I will catalog all the
+        proposed books here! That way, we can throw it back on the ballot in the future OR you can reference them for your
         own reading pleasure.
       </p>
     </main>
