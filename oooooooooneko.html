@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ashley Bruce - Many Oneko</title>
+        <link rel="stylesheet" href="/style.css" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+    </head>
+    <body>
+        <canvas style="position: absolute; top: 0px; left: 0px"></canvas>
+        <script type="module">
+            import {
+                OnekoCanvas,
+                loadSpriteImageBitmaps,
+            } from "./modules/many-oneko.js";
+
+            const windowLoaded = new Promise((resolve, reject) => {
+                window.onload = function () {
+                    resolve(window);
+                };
+            });
+            await windowLoaded;
+            const spriteBitmaps = await loadSpriteImageBitmaps();
+            const canvasEl = document.querySelector("canvas");
+            let installedMouseEventListener = undefined;
+            let installedOnAnimationFrameId = undefined;
+
+            const locationSearch = window.location.search;
+            const searchParams = new URLSearchParams(locationSearch);
+            let howMany;
+            if (searchParams.has("howMany")) {
+                howMany = parseInt(searchParams.get("howMany"));
+            } else {
+                howMany = 100;
+            }
+
+            function startOnekos() {
+                if (installedMouseEventListener) {
+                    canvasEl.removeEventListener(
+                        "mousemove",
+                        installedMouseEventListener,
+                    );
+                }
+
+                if (installedOnAnimationFrameId) {
+                    window.cancelAnimationFrame(installedOnAnimationFrameId);
+                }
+
+                canvasEl.width = window.innerWidth;
+                canvasEl.height = window.innerHeight;
+
+                const onekoCanvas = new OnekoCanvas(
+                    canvasEl,
+                    howMany,
+                    spriteBitmaps,
+                );
+
+                const newMouseEventListener = (e) => {
+                    const rect = canvasEl.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+
+                    console.log(x, y);
+
+                    onekoCanvas.updateMousePosition(x, y);
+                };
+                canvasEl.addEventListener("mousemove", newMouseEventListener);
+                installedMouseEventListener = newMouseEventListener;
+
+                function onAnimationFrame(timestamp) {
+                    onekoCanvas.onAnimationFrame(timestamp);
+                    installedOnAnimationFrameId =
+                        window.requestAnimationFrame(onAnimationFrame);
+                }
+                installedOnAnimationFrameId =
+                    window.requestAnimationFrame(onAnimationFrame);
+            }
+
+            window.addEventListener("resize", startOnekos);
+            startOnekos();
+        </script>
+    </body>
+</html>
