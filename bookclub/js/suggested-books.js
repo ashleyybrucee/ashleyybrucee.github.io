@@ -228,14 +228,6 @@ const suggestedBooks = [
     pages: 260,
   },
   {
-    cover: "../book-covers/ancillary-justice.jpg",
-    alt: "Book cover of Ancillary Justice shows two red & white sci-fi fighter ships racing past a larger ship.",
-    title: "Ancilliary Justice",
-    description: "A soldier on a quest for revenge.",
-    author: "Ann Leckie",
-    pages: 386,
-  },
-  {
     cover: "../book-covers/paper-menagerie.jpg",
     alt: "Book cover of Paper Menagerie shows a paper tiger.",
     title: "Paper Menagerie and Other Stories",
