@@ -4,6 +4,17 @@
 
 const pastBooks = [
   {
+    dateRead: "September 17, 2026",
+    cover: "./book-covers/labyrinths.jpg",
+    alt: "Book cover of Labryrinths shows a piece of paper with writing on it twisted to form a neverending path.",
+    title: "Labryrinths",
+    description:
+      "A collection of short stories that explores philosophical paradoxes, infinite libraries, shifting realities, and the mazes of time and memory.",
+    author: "Jorge Luis Borges",
+    pages: 260,
+    discussionQuestions: "./discussion-questions/labyrinths-dq.pdf",
+  },
+  {
     dateRead: "August 4, 2026",
     cover: "./book-covers/yesteryear.jpg",
     alt: "Book cover of Yesteryear shows a warped image of a house on a prarie.",

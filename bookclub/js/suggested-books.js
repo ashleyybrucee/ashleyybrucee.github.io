@@ -219,15 +219,6 @@ const suggestedBooks = [
     pages: 563,
   },
   {
-    cover: "../book-covers/labyrinths.jpg",
-    alt: "Book cover of Labryrinths shows a piece of paper with writing on it twisted to form a neverending path.",
-    title: "Labryrinths",
-    description:
-      "A collection of short stories that explores philosophical paradoxes, infinite libraries, shifting realities, and the mazes of time and memory.",
-    author: "Jorge Luis Borges",
-    pages: 260,
-  },
-  {
     cover: "../book-covers/paper-menagerie.jpg",
     alt: "Book cover of Paper Menagerie shows a paper tiger.",
     title: "Paper Menagerie and Other Stories",
