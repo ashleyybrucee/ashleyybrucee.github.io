@@ -9,7 +9,7 @@ const currentBooks = [
     alt: "Book cover of Parable of the Sower shows a stylized woman walking.",
     title: "Parable of the Sower",
     description:
-      "In a near-future California, fractured by climate collapse and societal greed, a teenage girl with a condition that forces her to physically feel other people's pain must lead a group of survivors north, while founding a resilient new belief system called the Earthseed..",
+      "In a near-future California, fractured by climate collapse and societal greed, a teenage girl with a condition that forces her to physically feel other people's pain must lead a group of survivors north, while founding a resilient new belief system called the Earthseed.",
     author: "Octavia Butler",
     pages: 368,
   },
@@ -45,7 +45,7 @@ const currentBooks = [
     alt: "Book cover of The Steerswoman shows a ring laid on a paper map.",
     title: "The Steerswoman",
     description:
-      "An elite investigator in an order of traveling scholars is obligated to honestly answer any question asked of her. When she starts tracking mysterious magical gemstones, she uncovers clues suggesting her \"fantasy\" world is actually driven by forgotten high technology. .",
+      "An elite investigator in an order of traveling scholars is obligated to honestly answer any question asked of her. She begins to follow myterious gemstones, which leads to her uncovering things about the world she lives in.",
     author: "Rosemary Kirstein",
     pages: 279,
   },
