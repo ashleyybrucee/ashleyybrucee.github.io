@@ -45,7 +45,7 @@ const currentBooks = [
     alt: "Book cover of The Steerswoman shows a ring laid on a paper map.",
     title: "The Steerswoman",
     description:
-      "An elite investigator in an order of traveling scholars is obligated to honestly answer any question asked of her. She begins to follow myterious gemstones, which leads to her uncovering things about the world she lives in.",
+      "An elite investigator in an order of traveling scholars is obligated to honestly answer any question asked of her. She begins to follow mysterious gemstones, which leads to her uncovering things about the world she lives in.",
     author: "Rosemary Kirstein",
     pages: 279,
   },
